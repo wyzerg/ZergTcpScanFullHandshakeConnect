@@ -1,4 +1,4 @@
-module tcpScanFullHandshakeConnect
+module github.com/wyzerg/tcpScanFullHandshakeConnect
 
 go 1.19
 

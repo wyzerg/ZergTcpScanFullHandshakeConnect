@@ -3,8 +3,8 @@ package scan
 import (
 	"context"
 	"fmt"
-	"tcpScanFullHandshakeConnect/tasks"
-	"tcpScanFullHandshakeConnect/until"
+	"github.com/wyzerg/tcpScanFullHandshakeConnect/tasks"
+	"github.com/wyzerg/tcpScanFullHandshakeConnect/until"
 )
 
 func TcpScan(ipString, portString string, thread int) (map[string][]int, error) {
