@@ -1,4 +1,4 @@
-package tcpScanFullHandshakeConnect
+package scan
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 )
 
 func Test_TcpScanFullHandshakeConnect(t *testing.T) {
-	result, err := TcpScanFullHandshakeConnect("127.0.0.1", "1000-8000", 5000)
+	result, err := TcpScan("127.0.0.1", "1000-8000", 5000)
 	if err != nil {
 		return
 	}

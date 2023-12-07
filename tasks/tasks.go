@@ -52,7 +52,7 @@ func Run(ips []net.IP, ports []int, thread int, ctx context.Context) map[string]
 					return
 				}
 				SaveResult(ipPortResult.Ip, ipPortResult.Port)
-				fmt.Printf("tcpScanFullHandshakeConnect ip: %+v Port: %+v\n", ipPortResult.Ip, ipPortResult.Port)
+				fmt.Printf("scan ip: %+v Port: %+v\n", ipPortResult.Ip, ipPortResult.Port)
 			default:
 				time.Sleep(time.Microsecond * 100)
 			}

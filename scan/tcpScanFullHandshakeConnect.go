@@ -1,4 +1,4 @@
-package tcpScanFullHandshakeConnect
+package scan
 
 import (
 	"context"
@@ -7,7 +7,7 @@ import (
 	"tcpScanFullHandshakeConnect/until"
 )
 
-func TcpScanFullHandshakeConnect(ipString, portString string, thread int) (map[string][]int, error) {
+func TcpScan(ipString, portString string, thread int) (map[string][]int, error) {
 	var ctx, cancel = context.WithCancel(context.Background())
 	defer func() {
 		cancel()
