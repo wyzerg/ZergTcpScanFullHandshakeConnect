@@ -3,8 +3,8 @@ package tcpScan
 import (
 	"context"
 	"fmt"
-	"github.com/wyzerg/scan/tasks"
-	"github.com/wyzerg/scan/until"
+	"github.com/wyzerg/tcpScan/tasks"
+	"github.com/wyzerg/tcpScan/until"
 )
 
 func TCPScan(ipString, portString string, thread int) (map[string][]int, error) {
