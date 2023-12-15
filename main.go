@@ -1,4 +1,4 @@
-package tcpScan
+package main
 
 import (
 	"context"
@@ -22,4 +22,12 @@ func TCPScan(ipString, portString string, thread int) (map[string][]int, error) 
 	}
 	result := tasks.Run(ips, ports, thread, ctx)
 	return result, nil
+}
+
+func main() {
+	result, err := TCPScan("127.0.0.1", "1000-10000", 5000)
+	if err != nil {
+		return
+	}
+	fmt.Printf("%+v\n", result)
 }
