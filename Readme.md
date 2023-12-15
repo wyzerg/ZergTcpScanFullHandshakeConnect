@@ -19,8 +19,8 @@
 ### 下载依赖：
 
 ```shell
-go get github.com/wyzerg/tcpScanFullHandshakeConnect@v1.0.1
-go get github.com/wyzerg/tcpScanFullHandshakeConnect/until@v1.0.1
+go get github.com/wyzerg/scan@v1.0.1
+go get github.com/wyzerg/scan/until@v1.0.1
 ```
 
 ### 代码参考

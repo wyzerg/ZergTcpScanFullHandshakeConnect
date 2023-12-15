@@ -1,13 +1,13 @@
-package scan
+package tcpScan
 
 import (
 	"context"
 	"fmt"
-	"github.com/wyzerg/tcpScanFullHandshakeConnect/tasks"
-	"github.com/wyzerg/tcpScanFullHandshakeConnect/until"
+	"github.com/wyzerg/scan/tasks"
+	"github.com/wyzerg/scan/until"
 )
 
-func TcpScan(ipString, portString string, thread int) (map[string][]int, error) {
+func TCPScan(ipString, portString string, thread int) (map[string][]int, error) {
 	var ctx, cancel = context.WithCancel(context.Background())
 	defer func() {
 		cancel()

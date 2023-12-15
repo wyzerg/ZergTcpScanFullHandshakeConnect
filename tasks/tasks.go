@@ -33,7 +33,7 @@ func Run(ips []net.IP, ports []int, thread int, ctx context.Context) map[string]
 						WG.Done()
 						<-threadCh
 					}()
-					err := Connect(ipPort.Ip, ipPort.Port)
+					err := TCPConnect(ipPort.Ip, ipPort.Port)
 					if err == nil {
 						ResultsCh <- ipPort
 					}
