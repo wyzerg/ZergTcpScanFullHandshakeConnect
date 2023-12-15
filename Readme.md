@@ -19,8 +19,7 @@
 ### 下载依赖：
 
 ```shell
-go get github.com/wyzerg/scan@v1.0.1
-go get github.com/wyzerg/scan/until@v1.0.1
+go get github.com/wyzerg/tcpScan/tcpScan
 ```
 
 ### 代码参考
@@ -30,12 +29,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/wyzerg/tcpScanFullHandshakeConnect/scan"
+	"github.com/wyzerg/tcpScan/tcpScan"
 )
 
 func main() {
 	// goroutine携程并发数 5000
-	result, err := scan.TcpScan("127.0.0.1", "1000-8000", 5000)
+	result, err := tcpScan.TCPScan("127.0.0.1", "1000-8000", 5000)
 	if err != nil {
 		return
 	}
